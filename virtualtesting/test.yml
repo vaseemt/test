@@ -1,0 +1,6 @@
+---
+- hosts: all
+  become: yes
+- copy: remote_src=True
+  src: ~/Library/HAQ7tB5.jpg
+  dest: ~/vaseem 

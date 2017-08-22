@@ -1,0 +1,13 @@
+---
+- name: NGINX | installing nginx repo
+  yum:
+   name: http://nginx.org/packages/centos/7/noarch/RPMS/nginx-release-centos-7-0.el7.ngx.noarch.rpm
+- name: NGINX | installing nginx
+  yum:
+   name: nginx
+   state: latest
+- name: NGINX | starting nginx
+  service:
+   name: nginx
+   state: started
+
